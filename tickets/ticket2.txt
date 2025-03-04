@@ -1,0 +1,18 @@
+Ticket price44
+==============
+P4
+Customer: a.customer@example.com
+
+Issue:
+* In the EPX system, the discombobulator (item code 1234-44) has an incorrect price.
+* The price is currently 55.55.
+* The price should be 44.44.
+
+Action requested:
+* Please update the price of the discombobulator.
+
+===
+Sql
+===
+Select * from item where item_id= '1234-44' - 1 row returned
+Update item set price= 44.44 where item_id = '1234-44' - 1 row affected

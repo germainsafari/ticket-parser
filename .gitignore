@@ -1,0 +1,8 @@
+# Ignore environment files
+.env
+venv/
+__pycache__/
+
+# Ignore unnecessary system files
+.DS_Store
+Thumbs.db
